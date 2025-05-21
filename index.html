@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="hy">
+<head>
+  <meta charset="UTF-8">
+  <title>Հարսանեկան հրավիրատոմս</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: #fff4f4;
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #533f34;
+    }
+    .container {
+      max-width: 520px;
+      background: #fff;
+      border-radius: 18px;
+      margin: 40px auto 0 auto;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.09);
+      padding: 0 0 30px 0;
+      overflow: hidden;
+      position: relative;
+    }
+    header {
+      background: linear-gradient(90deg, #f7cac9 0%, #fff6e9 100%);
+      padding: 40px 20px 20px 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 3em;
+      color: #a75e48;
+      margin-bottom: 0;
+    }
+    header h2 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 2em;
+      color: #7b3f2c;
+      margin: 8px 0 0 0;
+    }
+    .gallery {
+      margin: 24px 0 16px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 18px;
+    }
+    .gallery img {
+      width: 88%;
+      max-width: 400px;
+      border-radius: 16px;
+      box-shadow: 0 2px 14px rgba(180,120,120,0.10);
+      border: 2px solid #f2c9c2;
+      object-fit: cover;
+    }
+    .info-block {
+      background: #fff9fa;
+      border-radius: 12px;
+      padding: 15px 28px;
+      margin: 20px 0 16px 0;
+      font-size: 1.1em;
+      color: #895548;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(170,120,120,0.06);
+    }
+    .countdown {
+      background: #f2c9c2;
+      color: #fff;
+      border-radius: 12px;
+      display: inline-block;
+      font-size: 1.14em;
+      padding: 8px 22px;
+      margin: 12px 0;
+      font-family: 'Roboto', sans-serif;
+      letter-spacing: 1px;
+    }
+    .rsvp-section {
+      margin-top: 33px;
+      background: #f7ece3;
+      border-radius: 12px;
+      padding: 22px 0 16px 0;
+      text-align: center;
+    }
+    .rsvp-section label {
+      font-size: 1.09em;
+      margin-right: 10px;
+      color: #814b3a;
+    }
+    .rsvp-section input[type="number"] {
+      width: 60px;
+      padding: 5px 8px;
+      border-radius: 6px;
+      border: 1px solid #c9b3b3;
+      margin-left: 10px;
+      margin-right: 15px;
+      font-size: 1em;
+    }
+    .rsvp-section input[type="radio"] {
+      margin-left: 12px;
+      margin-right: 3px;
+      accent-color: #b87a69;
+      transform: scale(1.15);
+    }
+    .rsvp-section button {
+      background: #b87a69;
+      color: #fff;
+      padding: 8px 24px;
+      border: none;
+      border-radius: 8px;
+      font-size: 1.13em;
+      cursor: pointer;
+      margin-left: 10px;
+      margin-top: 10px;
+      transition: background 0.2s;
+    }
+    .rsvp-section button:hover {
+      background: #a36657;
+    }
+    .rsvp-result {
+      margin-top: 10px;
+      font-size: 1.1em;
+      color: #377d22;
+      font-weight: bold;
+      min-height: 20px;
+    }
+    @media (max-width: 600px) {
+      .container {max-width: 99vw;}
+      .gallery img {width: 98%;}
+      .info-block {padding: 13px 3vw;}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Անահիտ & Արմեն</h1>
+      <h2>Հարսանեկան հրավիրատոմս</h2>
+      <div class="countdown" id="countdown"></div>
+    </header>
+    <div class="gallery">
+      <img src="https://images.unsplash.com/photo-1503676382389-4809596d5290?auto=format&fit=crop&w=800&q=80" alt="Wedding couple">
+      <img src="https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?auto=format&fit=crop&w=800&q=80" alt="Wedding rings">
+      <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=800&q=80" alt="Wedding flowers">
+      <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=800&q=80" alt="Wedding cake">
+      <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=800&q=80" alt="Wedding hands">
+      <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=800&q=80" alt="Bride bouquet">
+      <img src="https://images.unsplash.com/photo-1510915228340-29c85a43dcfe?auto=format&fit=crop&w=800&q=80" alt="Church">
+      <img src="https://images.unsplash.com/photo-1509228468518-180dd4864904?auto=format&fit=crop&w=800&q=80" alt="Church inside">
+      <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80" alt="Restaurant">
+    </div>
+    <div class="info-block">
+      Սիրով հրավիրում ենք Ձեզ մասնակցելու մեր հարսանեկան արարողությանը։<br>
+      <b>Եկեղեցի՝</b> Սուրբ Գրիգոր Լուսավորիչ, Երևան, Վարդանանց 1, <b>ժամը 15:00</b><br>
+      <b>Ռեստորան՝</b> «Արև», Երևան, Սայաթ-Նովա 80, <b>ժամը 17:00</b>
+      <br><br>
+      Ձեր ներկայությունը կլինի մեր ամենամեծ նվերը։
+    </div>
+    <div class="rsvp-section">
+      <form id="rsvpForm" onsubmit="return handleRSVP(event)">
+        <label>Հյուրերի քանակը</label>
+        <input type="number" name="guests" min="1" max="15" value="1" required>
+        <label>Կգա՞ք</label>
+        <input type="radio" name="attendance" value="yes" required> Այո
+        <input type="radio" name="attendance" value="no"> Ոչ
+        <br>
+        <button type="submit">Հաստատել</button>
+      </form>
+      <div class="rsvp-result" id="rsvpResult"></div>
+    </div>
+  </div>
+  <script>
+    // Countdown
+    const weddingDate = new Date("2025-06-20T15:00:00+04:00").getTime();
+    function updateCountdown() {
+      const now = new Date().getTime();
+      let distance = weddingDate - now;
+      if (distance < 0) distance = 0;
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+      document.getElementById("countdown").textContent = `Հարսանիքին մնացել է՝ ${days} օր, ${hours} ժամ, ${minutes} րոպե, ${seconds} վայրկյան`;
+    }
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+
+    // RSVP Form
+    function handleRSVP(event) {
+      event.preventDefault();
+      const form = document.getElementById('rsvpForm');
+      const attendance = form.elements['attendance'].value;
+      const guests = form.elements['guests'].value;
+      let message = '';
+      if (attendance === 'yes') {
+        message = `Շնորհակալություն, Ձեր մասնակցությունը հաստատվեց։ Հյուրերի քանակ՝ ${guests}։ Սիրով սպասում ենք Ձեզ։`;
+      } else {
+        message = 'Շնորհակալություն, որ տեղեկացրեցիք։ Ցանկանում ենք Ձեզ երջանկություն։';
+      }
+      document.getElementById('rsvpResult').textContent = message;
+      return false;
+    }
+  </script>
+</body>
+</html>
